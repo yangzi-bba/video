@@ -56,12 +56,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ava.game.naver.com.xray.jrmpv.Biz.id
+    servername: quiz.int.vidio.com.xray.jrmpv.Biz.id
     network: ws
     ws-opts:
       path: /ID3
       headers:
-        Host: ava.gamr.naver.com.xray.jrmpv.Biz.id
+        Host: quiz.int.vidio.com.xray.jrmpv.Biz.id
     udp: true
   - name: vidio3
     server: quiz.int.vidio.com
@@ -167,4 +167,5 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
