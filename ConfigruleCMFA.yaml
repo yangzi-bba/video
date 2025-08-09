@@ -32,24 +32,24 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: AKUN1
-    server: investors.spotify.com
+  - name: vidio1
+    server: quiz.int.vidio.com
     port: 80
     type: vless
-    uuid: 248e98dc-0dc7-422a-b238-26f762e44925
+    uuid: a4b52f20-573f-4fcd-b494-17b751e522a3
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: xray.jrmpv.Biz.id
+    servername: top.globalxnet.xyz
     network: ws
     ws-opts:
-      path: /ID4
+      path: /topglobal
       headers:
-        Host: xray.jrmpv.Biz.id
+        Host: top.globalxnet.xyz
     udp: true
-  - name: AKUN2
-    server: investors.spotify.com
+  - name: vidio2
+    server: quiz.int.vidio.com
     port: 443
     type: vless
     uuid: 248e98dc-0dc7-422a-b238-26f762e44925
@@ -63,8 +63,8 @@ proxies:
       headers:
         Host: ava.gamr.naver.com.xray.jrmpv.Biz.id
     udp: true
-  - name: AKUN3
-    server: ava.game.naver.com
+  - name: vidio3
+    server: quiz.int.vidio.com
     port: 80
     type: vless
     uuid: 908379e8-fef9-4bdb-bff9-bce0d22ae0dc
@@ -85,18 +85,18 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AKUN1
-      - AKUN2
-      - AKUN3
+      - vidio1
+      - vidio2
+      - vidio3
 
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AKUN1
-      - AKUN2
-      - AKUN3
+      - vidio1
+      - vidio2
+      - vidio3
       
   - name: IKLAN
     type: select
@@ -167,3 +167,4 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
